@@ -1,0 +1,28 @@
+#main {
+    min-height: 4rem;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+    width: 90%;
+}
+
+#sidebar    {
+    width: 60%;
+    min-height: 1rem;
+    background: red;
+    float: left;
+}
+
+#page-wrap  {
+    top:50%;
+    display: flex; 
+    width: 40%rem;
+    min-height: 2rem;
+    float: left;
+}
+
+.clear:after {
+    clear: both;
+    display: table;
+    content: "";
+}
