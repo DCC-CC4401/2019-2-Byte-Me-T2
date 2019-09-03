@@ -1,3 +1,9 @@
+.modebar {
+	display: none !important;
+}
+
+
+/*
 #main {
     min-height: 4rem;
     margin: auto;
@@ -26,3 +32,5 @@
     display: table;
     content: "";
 }
+
+*/ 
