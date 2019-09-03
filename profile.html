@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
 </head>
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <nav class="navbar navbar-dark text-center float-left align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background-color: rgb(224,193,34);width: 50vm;">
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-clock"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>Brand name</span></div>
+                    <div class="sidebar-brand-text mx-3"><span>Byte ME</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
@@ -54,15 +56,7 @@
             <div class="container-fluid">
                 <h3 class="text-dark mb-4">Perfil</h3>
                 <div class="row mb-3">
-                    <div class="col-lg-4">
-                        <div class="card mb-3">
-                            <div class="card-body text-center shadow"><img class="rounded mb-3 mt-4" src="assets/img/avatars/avatar5.jpeg" width="120" height="120">
-                                <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Cambiar Avatar</button></div>
-                            </div>
-                        </div>
-                        <div class="card shadow mb-4"></div>
-                    </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-9 offset-lg-0">
                         <div class="row mb-3 d-none">
                             <div class="col">
                                 <div class="card text-white bg-primary shadow">
@@ -94,7 +88,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-10 col-xl-9">
+                            <div class="col-lg-12 col-xl-10 offset-lg-2">
+                                <div class="card mb-3">
+                                    <div class="card-body text-center shadow"><img class="rounded mb-3 mt-4" src="assets/img/image3.jpeg" width="120" height="120">
+                                        <div class="mb-3"><button class="btn btn-primary btn-sm" type="button" style="background-color: rgb(78,115,223);">Cambiar Avatar</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-10 offset-lg-2">
                                 <div class="card shadow mb-3">
                                     <div class="card-header py-3">
                                         <div class="col-3 col-sm-2 col-xl-1 offset-9 offset-sm-11 offset-xl-11"><button class="btn btn-primary btn-sm" type="button"><i class="fas fa-pencil-alt"></i></button></div>
@@ -119,10 +120,55 @@
                                         </form>
                                     </div>
                                 </div>
+                                <div class="card shadow mb-3">
+                                    <div class="card-header py-3">
+                                        <p class="text-primary d-lg-flex justify-content-lg-start m-0 font-weight-bold">Plantillas Para Actividades</p>
+                                    </div><div class="card-body">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Categoría</th>
+                    <th>Hora      inicio</th>
+                    <th>Duración</th>
+                    <th>Registrar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Trotar </td>
+                    <td>Salir a trotar alrededor de mi casa</td>
+                    <td>Ejercicio</td>
+                    <td><input type="text" class="form-control" placeholder="Ingrese hora de inicio"></td>
+                    <td><input type="text" class="form-control" placeholder="Ingrese duración"></td>
+                    <td>
+                        <div role="group" class="btn-group"><button class="btn btn-primary" type="button" style="background-color: rgb(32,205,17);"><i class="fa fa-check"></i></button><button class="btn btn-primary" type="button" style="background-color: rgb(210,32,21);"><i class="fa fa-trash-o"></i></button></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Estudiar Física</td>
+                    <td>Estudiar la materia de física vista durante la semana</td>
+                    <td>Estudio</td>
+                    <td><input type="text" class="form-control" placeholder="Ingrese hora de inicio"></td>
+                    <td><input type="text" class="form-control" placeholder="Ingrese duración"></td>
+                    <td>
+                        <div role="group" class="btn-group"><button class="btn btn-primary" type="button" style="background-color: rgb(32,205,17);"><i class="fa fa-check"></i></button><button class="btn btn-primary" type="button" style="background-color: rgb(210,32,21);"><i class="fa fa-trash-o"></i></button></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 offset-lg-9"><button class="btn btn-primary" type="button"><i class="fa fa-check"></i>Añadir Plantilla</button></div>
+    </div>
+</div></div>
                                 <div class="card shadow">
+                                    <div class="card-header"><label for="address" style="color: rgb(78,115,223);"><strong>Amigos</strong></label></div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group"><label for="address"><strong>Amigos</strong></label>
+                                            <div class="form-group">
                                                 <div class="col-lg-10 offset-lg-0">
                                                     <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Buscar amigos">
                                                         <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
@@ -137,8 +183,8 @@
                                                             width="90" height="90"><img class="img-thumbnail" src="assets/img/avatars/avatar2.jpeg" width="90" height="90"></div><img class="img-thumbnail" src="assets/img/avatars/avatar3.jpeg" width="90" height="90"><img class="img-thumbnail"
                                                         src="assets/img/avatars/avatar4.jpeg" width="90" height="90"><img class="img-thumbnail" src="assets/img/photo_2019-08-23_16-48-34.jpg" width="90" height="90"></div>
                                             </div>
-                                            <div class="form-group">
-                                                <nav class="text-center d-lg-flex justify-content-lg-center">
+                                            <div class="form-group text-center">
+                                                <nav class="text-center d-sm-flex d-lg-flex justify-content-sm-center align-items-sm-center justify-content-lg-center">
                                                     <ul class="pagination">
                                                         <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
                                                         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -154,17 +200,64 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-12 col-xl-10 offset-xl-2">
+                                <div class="card shadow mb-4"></div>
+                            </div>
+                            <div class="col-lg-12 col-xl-10 offset-lg-2">
+                                <div class="card shadow mb-4"></div>
+                            </div>
+                            <div class="col-lg-12 col-xl-10 offset-lg-2">
+                                <div class="card shadow mb-3">
+                                    <div class="card-header py-3">
+                                        <p class="text-primary d-lg-flex justify-content-lg-start m-0 font-weight-bold">Solicitudes de amistad pendientes</p>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-lg-3" style="height: 100px;"><img src="assets/img/avatar6.jpg" style="min-width: 90px;max-width: 90px;height: 90px;"></div>
+                                            <div class="col-sm-3 col-lg-3 text-center align-items-stretch align-content-center align-self-center" style="height: 100px;"><a class="d-lg-flex justify-content-center align-items-center align-content-center align-self-center justify-content-lg-center align-items-lg-center" href="#" style="font-family: Nunito, sans-serif;"><strong>Julio Antonio López</strong></a></div>
+                                            <div
+                                                class="col-lg-3 text-center" style="height: 100px;width: 86px;"><button class="btn btn-primary" type="button">Aceptar</button></div>
+                                        <div class="col-sm-2 col-lg-3"><button class="btn btn-primary" type="button" style="background-color: rgb(110,112,119);">Rechazar</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-lg-3" style="height: 100px;"><img src="assets/img/avatar7.jpg" style="width: 90px;min-width: 90px;max-width: 90px;"></div>
+                                        <div class="col-sm-3 col-lg-3 text-center" style="height: 100px;"><a class="d-lg-flex justify-content-lg-center align-items-lg-center" href="#" style="font-family: Nunito, sans-serif;"><strong>María Antonieta</strong></a></div>
+                                        <div class="col-lg-3 text-center" style="height: 100px;width: 86px;"><button class="btn btn-primary" type="button">Aceptar</button></div>
+                                        <div class="col-sm-3 col-lg-3"><button class="btn btn-primary" type="button" style="background-color: rgb(110,112,119);">Rechazar</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-lg-3" style="height: 100px;"><img src="assets/img/avatar8.jpg" style="width: 100px;min-width: 90px;max-width: 90px;"></div>
+                                        <div class="col-sm-3 col-lg-3 text-center" style="height: 100px;"><a href="#" style="font-family: Nunito, sans-serif;"><strong>Andrés Raimundo</strong></a></div>
+                                        <div class="col-lg-3 text-center" style="height: 100px;width: 86px;"><button class="btn btn-primary" type="button">Aceptar</button></div>
+                                        <div class="col-sm-3 col-lg-3"><button class="btn btn-primary" type="button" style="background-color: rgb(110,112,119);">Rechazar</button></div>
+                                    </div>
+                                    <nav class="text-center d-sm-flex d-lg-flex justify-content-sm-center align-items-sm-center justify-content-lg-center">
+                                        <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4"></div>
                         </div>
                     </div>
                 </div>
-                <div class="card shadow mb-5"></div>
             </div>
+            <div class="card shadow mb-5"></div>
         </div>
-        <footer class="bg-white sticky-footer">
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"><span>Copyright © Brand 2019</span></div>
-            </div>
-        </footer>
+    </div>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Team ByteMe</span></div>
+        </div>
+    </footer>
     </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
